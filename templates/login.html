@@ -7,7 +7,14 @@
     <div class="col-md-5">
         <div class="card shadow">
             <div class="card-body">
+
+                <!-- Logo Ekleme -->
+                <div class="text-center mb-4">
+                    <img src="{{ url_for('static', filename='images/bilgiislemlogo.png') }}" alt="Karacabey Bilgi İşlem" width="120">
+                </div>
+
                 <h3 class="card-title text-center mb-4">Giriş Yap</h3>
+
                 <form method="POST" action="{{ url_for('login') }}">
                     <div class="mb-3">
                         <label for="username" class="form-label">Kullanıcı Adı</label>
@@ -21,9 +28,16 @@
                         <button type="submit" class="btn btn-primary">Giriş Yap</button>
                     </div>
                 </form>
+
                 <div class="text-center mt-3">
                     <small>Hesabınız yok mu? <a href="{{ url_for('register') }}">Kayıt Ol</a></small>
                 </div>
+
+                <!-- Kalın Alt Yazı -->
+                <div class="text-center mt-4">
+                    <small class="text-muted" style="font-weight: bold;">Karacabey Belediyesi Bilgi İşlem Birimi</small>
+                </div>
+
             </div>
         </div>
     </div>
